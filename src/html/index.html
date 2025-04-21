@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on"
+    />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <title>Avanti</title>
+  </head>
+  <body>
+    <header>
+      <section class="cabeçalho">
+        <p class="texto-forte">
+          Ganhe <span class="desconto">R$10,00</span> de desconto no seu
+          primeiro pedido. Utilize o cupom
+          <span class="desconto-final">DESCONTO10</span>
+        </p>
+      </section>
+      <section class="container-info">
+        <div class="busca">
+          <div class="bar-mobile"><i class="fa-solid fa-bars"></i></div>
+          <div class="logo-container">
+            <img
+              class="logo"
+              src="../assets/attachment.png"
+              alt="Logo-Avanti"
+            />
+            <div class="input-container">
+              <input
+                type="text"
+                placeholder="Digite aqui o que você procura"
+                id="busca"
+              />
+              <button class="lupa" id="botao-busca">
+                <img src="../assets/lupa.png" alt="lupa" />
+              </button>
+              <span class="valor-input" id="resultado-busca"></span>
+            </div>
+          </div>
+
+          <div class="container-cliente">
+            <img
+              class="cliente"
+              src="../assets/cliente.png"
+              alt="cliente"
+            /><span class="text-cliente"
+              >Olá, <br />
+              Nome cliente!</span
+            >
+            <div class="carrinho">
+              <img src="../assets/carrinho.png" alt="carrinho" />
+              <span class="contador-carrinho">2</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="input-container-mobile">
+            <input
+              type="text"
+              placeholder="Digite aqui o que você procura"
+              id="busca-mobile"
+            />
+            <button class="lupa" id="botao-busca-mobile">
+              <img src="../assets/lupa.png" alt="lupa" />
+            </button>
+            <span class="valor-input" id="resultado-busca-mobile"></span>
+          </div>
+          <nav>
+            <ul>
+              <li class="menu-categorias">
+                <span id="todas">
+                  <i class="fa-solid fa-bars"></i> Todas as Categorias</span
+                >
+                <div id="menu-categorias">
+                  <div id="menu-lateral">
+                    <ul>
+                      <li class="departamento">
+                        Departamento <i class="fas fa-angle-right"></i>
+                      </li>
+                      <li class="departamento">
+                        Departamento <i class="fas fa-angle-right"></i>
+                      </li>
+                      <li class="departamento">
+                        Departamento <i class="fas fa-angle-right"></i>
+                      </li>
+                      <li class="departamento">
+                        Departamento <i class="fas fa-angle-right"></i>
+                      </li>
+                      <li class="departamento">
+                        Departamento <i class="fas fa-angle-right"></i>
+                      </li>
+                      <li class="departamento">
+                        Departamento <i class="fas fa-angle-right"></i>
+                      </li>
+                      <li class="departamento">
+                        Departamento <i class="fas fa-angle-right"></i>
+                      </li>
+                      <li class="departamento">
+                        Departamento <i class="fas fa-angle-right"></i>
+                      </li>
+                      <li class="departamento">
+                        Departamento <i class="fas fa-angle-right"></i>
+                      </li>
+                      <li class="departamento">
+                        Departamento <i class="fas fa-angle-right"></i>
+                      </li>
+                      <li class="departamento">
+                        Departamento <i class="fas fa-angle-right"></i>
+                      </li>
+                      <li class="departamento">
+                        Departamento <i class="fas fa-angle-right"></i>
+                      </li>
+                      <li class="departamento">
+                        Departamento <i class="fas fa-angle-right"></i>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div id="submenu-categorias">
+                    <div class="colunas-categoria">
+                      <ul class="categorias">
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                      </ul>
+                      <ul class="categorias">
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                      </ul>
+                      <ul class="categorias">
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                        <li class="categoria">Categoria</li>
+                      </ul>
+                    </div>
+
+                    <div class="imagem">
+                      <div class="container-caneca">
+                        <img class="caneca" src="../assets/caneca.png" alt="" />
+                      </div>
+                      <div class="container-imagem">
+                        <span class="texto-imagem"
+                          >Confira os Produtos
+                          <span class="bold">Que acabaram De Chegar</span></span
+                        >
+                        <button class="button-imagem">VER TODOS</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-departamento">Departamento</li>
+              <li class="nav-departamento">Departamento</li>
+              <li class="nav-departamento">Departamento</li>
+              <li class="nav-departamento">Departamento</li>
+              <li class="nav-departamento">Departamento</li>
+              <li class="nav-departamento">Departamento</li>
+              <li class="nav-departamento">Departamento</li>
+              <li class="nav-departamento">Departamento</li>
+            </ul>
+
+            <div id="menu-departamento-dropdown">
+              <div class="container-conteudo">
+                <div class="container-colunas">
+                  <h3 class="titulo-departamento">Departamento</h3>
+                  <div class="colunas-departamento">
+                    <ul class="lista-departamento">
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                    </ul>
+                    <ul class="lista-departamento">
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                    </ul>
+                    <ul class="lista-departamento">
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                      <li class="categoria">Categoria</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="imagem-departamento">
+                  <div class="caneca-departamento"></div>
+                  <div class="texto-body">
+                    <span class="texto-departamento"
+                      >Confira os Produtos
+                      <span class="bold">Que acabaram De Chegar</span></span
+                    >
+                    <button class="button-departamento">VER TODOS</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="container-banner" id="mobile">
+        <div class="swiper banner-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-banner2"></div>
+            <div class="swiper-slide swiper-slide-banner1">
+              <img src="../assets/banner.png" alt="cadeira" class="banner1" />
+              <div class="texto-banner">
+                <div class="container-titulo">
+                  <span class="titulo-banner">SUPER</span>
+                  <span class="titulo-banner-normal">SALE</span>
+                </div>
+                <span class="subtitulo-banner"></span>
+                <span class="oferta-banner">50%OFF</span>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-banner3"></div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-banner1"></div>
+        </div>
+      </section>
+
+      <section class="container-banner" id="desktop">
+        <div class="swiper banner-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-banner1">
+              <img src="../assets/banner.png" alt="cadeira" class="banner1" />
+              <div class="texto-banner">
+                <div class="container-titulo">
+                  <span class="titulo-banner">SUPER</span>
+                  <span class="titulo-banner-normal">SALE</span>
+                </div>
+                <span class="subtitulo-banner"></span>
+                <span class="oferta-banner">50%OFF</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-swipper">
+        <div class="titulo-swipper">
+          <div>
+            <span class="lançamentos">Lançamentos</span>
+          </div>
+          <div>
+            <span class="ver-mais">Ver mais</span>
+          </div>
+        </div>
+        <div class="swiper lançamntos-swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="modelo">
+                <img src="../assets/modelo.png" alt="peça de roupa" />
+                <span class="novo">NOVO</span>
+              </div>
+              <div class="preco-roupa">
+                <h3 class="descricao-produto">
+                  Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                </h3>
+                <div class="valor-produto">
+                  <span class="valor-inteiro">R$ 100,00</span>
+                  <span class="valor-desconto">R$79,90</span>
+                  <span class="desconto-sliper">10% OFF</span>
+                  <span class="parcelado"
+                    >Ou em até <span>10x de R$ 7.90</span></span
+                  >
+                </div>
+              </div>
+              <button class="comprar">Comprar</button>
+            </div>
+            <div class="swiper-slide">
+              <div class="modelo">
+                <img src="../assets/modelo.png" alt="peça de roupa" />
+                <span class="novo">NOVO</span>
+              </div>
+              <div class="preco-roupa">
+                <h3 class="descricao-produto">
+                  Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                </h3>
+                <div class="valor-produto">
+                  <span class="valor-inteiro">R$ 100,00</span>
+                  <span class="valor-desconto">R$79,90</span>
+                  <span class="desconto-sliper">10% OFF</span>
+                  <span class="parcelado"
+                    >Ou em até <span>10x de R$ 7.90</span></span
+                  >
+                </div>
+              </div>
+              <button class="comprar">Comprar</button>
+            </div>
+            <div class="swiper-slide">
+              <div class="modelo">
+                <img src="../assets/modelo.png" alt="peça de roupa" />
+                <span class="novo">NOVO</span>
+              </div>
+              <div class="preco-roupa">
+                <h3 class="descricao-produto">
+                  Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                </h3>
+                <div class="valor-produto">
+                  <span class="valor-inteiro">R$ 100,00</span>
+                  <span class="valor-desconto">R$79,90</span>
+                  <span class="desconto-sliper">10% OFF</span>
+                  <span class="parcelado"
+                    >Ou em até <span>10x de R$ 7.90</span></span
+                  >
+                </div>
+              </div>
+              <button class="comprar">Comprar</button>
+            </div>
+            <div class="swiper-slide">
+              <div class="modelo">
+                <img src="../assets/modelo.png" alt="peça de roupa" />
+                <span class="novo">NOVO</span>
+              </div>
+              <div class="preco-roupa">
+                <h3 class="descricao-produto">
+                  Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                </h3>
+                <div class="valor-produto">
+                  <span class="valor-inteiro">R$ 100,00</span>
+                  <span class="valor-desconto">R$79,90</span>
+                  <span class="desconto-sliper">10% OFF</span>
+                  <span class="parcelado"
+                    >Ou em até <span>10x de R$ 7.90</span></span
+                  >
+                </div>
+              </div>
+              <button class="comprar">Comprar</button>
+            </div>
+            <div class="swiper-slide">
+              <div class="modelo">
+                <img src="../assets/modelo.png" alt="peça de roupa" />
+                <span class="novo">NOVO</span>
+              </div>
+              <div class="preco-roupa">
+                <h3 class="descricao-produto">
+                  Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                </h3>
+                <div class="valor-produto">
+                  <span class="valor-inteiro">R$ 100,00</span>
+                  <span class="valor-desconto">R$79,90</span>
+                  <span class="desconto-sliper">10% OFF</span>
+                  <span class="parcelado"
+                    >Ou em até <span>10x de R$ 7.90</span></span
+                  >
+                </div>
+              </div>
+              <button class="comprar">Comprar</button>
+            </div>
+            <div class="swiper-slide">
+              <div class="modelo">
+                <img src="../assets/modelo.png" alt="peça de roupa" />
+                <span class="novo">NOVO</span>
+              </div>
+              <div class="preco-roupa">
+                <h3 class="descricao-produto">
+                  Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                </h3>
+                <div class="valor-produto">
+                  <span class="valor-inteiro">R$ 100,00</span>
+                  <span class="valor-desconto">R$79,90</span>
+                  <span class="desconto-sliper">10% OFF</span>
+                  <span class="parcelado"
+                    >Ou em até <span>10x de R$ 7.90</span></span
+                  >
+                </div>
+              </div>
+              <button class="comprar">Comprar</button>
+            </div>
+            <div class="swiper-slide">
+              <div class="modelo">
+                <img src="../assets/modelo.png" alt="peça de roupa" />
+                <span class="novo">NOVO</span>
+              </div>
+              <div class="preco-roupa">
+                <h3 class="descricao-produto">
+                  Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                </h3>
+                <div class="valor-produto">
+                  <span class="valor-inteiro">R$ 100,00</span>
+                  <span class="valor-desconto">R$79,90</span>
+                  <span class="desconto-sliper">10% OFF</span>
+                  <span class="parcelado"
+                    >Ou em até <span>10x de R$ 7.90</span></span
+                  >
+                </div>
+              </div>
+              <button class="comprar">Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <span class="material-icons">arrow_forward</span>
+          </div>
+          <div class="swiper-button-prev">
+            <span class="material-icons">arrow_back</span>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="container-descricao">
+        <div class="wrapper-descricao">
+          <div class="wrapper-caneca">
+            <img
+              src="../assets/canecatorta.png"
+              alt="caneca avanti"
+              class="caneca-descricao"
+            />
+          </div>
+          <div class="wrapper-descricao-caneca">
+            <span class="titulo-descricao">Lorem Ipsum</span>
+            <span class="descricao">
+              Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+              finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+              efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+              lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+              fringilla porttitor tortor eget lacinia. Donec sollicitudin
+              euismod orci, auctor fringilla magna consequat interdum. Fusce
+              sagittis elit a libero commodo egestas efficitur id augue.
+            </span>
+            <span class="descricao-final">
+              Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+              finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+              efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+              lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+              fringilla porttitor tortor eget lacinia. Donec sollicitudin
+              euismod orci, auctor fringilla magna consequat interdum. Fusce
+              sagittis elit a libero commodo egestas efficitur id augue.
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="pontos-positivos">
+        <div class="wrapper-pontos">
+          <div class="container-pontos">
+            <span class="titulo-pontos">LOREM INPSUM</span>
+            <div class="container-positivo" id="1">
+              <div class="icone-positivo">
+                <span class="material-symbols-outlined"> location_on </span>
+              </div>
+              <span class="descricao-positivo">
+                Aenean massa. Cum sociis natoque penatibus et magnis dis
+                parturient montes, nascetur ridiculus mus. Donec quam felis,
+                ultricies nec, pellentesque eu, pretium quis, sem.
+              </span>
+            </div>
+            <div class="container-positivo">
+              <div class="icone-positivo">
+                <span class="material-symbols-outlined"> location_on </span>
+              </div>
+              <span class="descricao-positivo">
+                Aenean massa. Cum sociis natoque penatibus et magnis dis
+                parturient montes, nascetur ridiculus mus. Donec quam felis,
+                ultricies nec, pellentesque eu, pretium quis, sem.
+              </span>
+            </div>
+            <div class="container-positivo-3">
+              <div class="icone-positivo">
+                <span class="material-symbols-outlined"> location_on </span>
+              </div>
+              <span class="descricao-positivo">
+                Aenean massa. Cum sociis natoque penatibus et magnis dis
+                parturient montes, nascetur ridiculus mus. Donec quam felis,
+                ultricies nec, pellentesque eu, pretium quis, sem.
+              </span>
+            </div>
+          </div>
+
+          <img
+            src="../assets/segundobanner.png"
+            alt="caneca-avanti"
+            class="caneca-pontos"
+            id="2"
+          />
+        </div>
+      </section>
+
+      <section class="container-descricao">
+        <div class="wrapper-descricao">
+          <div class="wrapper-caneca">
+            <img
+              src="../assets/canecatorta.png"
+              alt="caneca avanti"
+              class="caneca-descricao"
+            />
+          </div>
+          <div class="wrapper-descricao-caneca">
+            <span class="titulo-descricao">Lorem Ipsum</span>
+            <span class="descricao">
+              Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+              finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+              efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+              lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+              fringilla porttitor tortor eget lacinia. Donec sollicitudin
+              euismod orci, auctor fringilla magna consequat interdum. Fusce
+              sagittis elit a libero commodo egestas efficitur id augue.
+            </span>
+            <span class="descricao-final">
+              Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+              finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+              efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+              lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+              fringilla porttitor tortor eget lacinia. Donec sollicitudin
+              euismod orci, auctor fringilla magna consequat interdum. Fusce
+              sagittis elit a libero commodo egestas efficitur id augue.
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-swipper">
+        <div class="titulo-swipper">
+          <div>
+            <span class="lançamentos">Lançamentos</span>
+          </div>
+          <div>
+            <span class="ver-mais">Ver mais</span>
+          </div>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="modelo">
+                <img src="../assets/modelo.png" alt="peça de roupa" />
+                <span class="novo">NOVO</span>
+              </div>
+              <div class="preco-roupa">
+                <h3 class="descricao-produto">
+                  Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                </h3>
+                <div class="valor-produto">
+                  <span class="valor-inteiro">R$ 100,00</span>
+                  <span class="valor-desconto">R$79,90</span>
+                  <span class="desconto-sliper">10% OFF</span>
+                  <span class="parcelado"
+                    >Ou em até <span>10x de R$ 7.90</span></span
+                  >
+                </div>
+              </div>
+              <button class="comprar">Comprar</button>
+            </div>
+            <div class="swiper-slide">
+              <div class="modelo">
+                <img src="../assets/modelo.png" alt="peça de roupa" />
+                <span class="novo">NOVO</span>
+              </div>
+              <div class="preco-roupa">
+                <h3 class="descricao-produto">
+                  Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                </h3>
+                <div class="valor-produto">
+                  <span class="valor-inteiro">R$ 100,00</span>
+                  <span class="valor-desconto">R$79,90</span>
+                  <span class="desconto-sliper">10% OFF</span>
+                  <span class="parcelado"
+                    >Ou em até <span>10x de R$ 7.90</span></span
+                  >
+                </div>
+              </div>
+              <button class="comprar">Comprar</button>
+            </div>
+            <div class="swiper-slide">
+              <div class="modelo">
+                <img src="../assets/modelo.png" alt="peça de roupa" />
+                <span class="novo">NOVO</span>
+              </div>
+              <div class="preco-roupa">
+                <h3 class="descricao-produto">
+                  Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                </h3>
+                <div class="valor-produto">
+                  <span class="valor-inteiro">R$ 100,00</span>
+                  <span class="valor-desconto">R$79,90</span>
+                  <span class="desconto-sliper">10% OFF</span>
+                  <span class="parcelado"
+                    >Ou em até <span>10x de R$ 7.90</span></span
+                  >
+                </div>
+              </div>
+              <button class="comprar">Comprar</button>
+            </div>
+            <div class="swiper-slide">
+              <div class="modelo">
+                <img src="../assets/modelo.png" alt="peça de roupa" />
+                <span class="novo">NOVO</span>
+              </div>
+              <div class="preco-roupa">
+                <h3 class="descricao-produto">
+                  Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                </h3>
+                <div class="valor-produto">
+                  <span class="valor-inteiro">R$ 100,00</span>
+                  <span class="valor-desconto">R$79,90</span>
+                  <span class="desconto-sliper">10% OFF</span>
+                  <span class="parcelado"
+                    >Ou em até <span>10x de R$ 7.90</span></span
+                  >
+                </div>
+              </div>
+              <button class="comprar">Comprar</button>
+            </div>
+            <div class="swiper-slide">
+              <div class="modelo">
+                <img src="../assets/modelo.png" alt="peça de roupa" />
+                <span class="novo">NOVO</span>
+              </div>
+              <div class="preco-roupa">
+                <h3 class="descricao-produto">
+                  Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                </h3>
+                <div class="valor-produto">
+                  <span class="valor-inteiro">R$ 100,00</span>
+                  <span class="valor-desconto">R$79,90</span>
+                  <span class="desconto-sliper">10% OFF</span>
+                  <span class="parcelado"
+                    >Ou em até <span>10x de R$ 7.90</span></span
+                  >
+                </div>
+              </div>
+              <button class="comprar">Comprar</button>
+            </div>
+            <div class="swiper-slide">
+              <div class="modelo">
+                <img src="../assets/modelo.png" alt="peça de roupa" />
+                <span class="novo">NOVO</span>
+              </div>
+              <div class="preco-roupa">
+                <h3 class="descricao-produto">
+                  Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                </h3>
+                <div class="valor-produto">
+                  <span class="valor-inteiro">R$ 100,00</span>
+                  <span class="valor-desconto">R$79,90</span>
+                  <span class="desconto-sliper">10% OFF</span>
+                  <span class="parcelado"
+                    >Ou em até <span>10x de R$ 7.90</span></span
+                  >
+                </div>
+              </div>
+              <button class="comprar">Comprar</button>
+            </div>
+            <div class="swiper-slide">
+              <div class="modelo">
+                <img src="../assets/modelo.png" alt="peça de roupa" />
+                <span class="novo">NOVO</span>
+              </div>
+              <div class="preco-roupa">
+                <h3 class="descricao-produto">
+                  Lorem ipsum dolor sit amet consectetuer adipiscing elit
+                </h3>
+                <div class="valor-produto">
+                  <span class="valor-inteiro">R$ 100,00</span>
+                  <span class="valor-desconto">R$79,90</span>
+                  <span class="desconto-sliper">10% OFF</span>
+                  <span class="parcelado"
+                    >Ou em até <span>10x de R$ 7.90</span></span
+                  >
+                </div>
+              </div>
+              <button class="comprar">Comprar</button>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <span class="material-icons">arrow_forward</span>
+          </div>
+          <div class="swiper-button-prev">
+            <span class="material-icons">arrow_back</span>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="banner3">
+        <div class="container-texto-banner3">
+          <span class="texto-banner3"
+            >Entre em contato conosco e verifique a disponibilidade para sua
+            região!</span
+          >
+        </div>
+      </section>
+
+      <section class="container-newsletter">
+        <div class="wrapper-newsletter">
+          <div class="container-title-newsletter">
+            <span class="title-newsletter"
+              >Cadastre-se na nossa
+              <span class="newsletter">newsletter</span></span
+            >
+          </div>
+          <div class="wrapper-cadastro">
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Digite seu nome"
+            />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Digite seu e-mail"
+            />
+            <div class="container-checkbox">
+              <input type="checkbox" class="checkbox" />
+              <span class="acordo"
+                >Estou de acordo com a
+                <span class="politica">Politica de Privacidade</span></span
+              >
+            </div>
+
+            <button class="cadastrar">Cadastrar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer1">
+        <div class="container-infos">
+          <div class="container-midia">
+            <img
+              src="../assets/logo.png"
+              alt="logo-avanti"
+              class="logo-midia"
+            />
+            <div class="icones-midia">
+              <img src="../assets/instagram.png" alt="icone instagram" />
+              <img src="../assets/facebook.png" alt="icone facebook" />
+              <img src="../assets/youtube.png" alt="icone youtube" />
+              <img src="../assets/tiktok.png" alt="icone tiktok" />
+            </div>
+          </div>
+          <div class="institucional">
+            <h4>Institucional</h4>
+            <h5>Sobre nós</h5>
+            <h5>Nossas Lojas</h5>
+            <h5>Privacidade e Segurança</h5>
+            <h5>Termos e Condições</h5>
+          </div>
+          <div class="central-ajuda">
+            <h4>Central de Ajuda</h4>
+            <h5>Fale Conosco</h5>
+            <h5>Frete e Entrega</h5>
+            <h5>Troca e Devoluções</h5>
+            <h5>Formas e Pagamento</h5>
+            <h5>FAQ</h5>
+          </div>
+          <div class="atendimento">
+            <h4>Atendimento</h4>
+            <h5><span class="text-bold">Telefone:</span> (00) 1234-5678</h5>
+            <h5>
+              <span class="text-bold">E-mail:</span> exemplo@exemplo.com.br
+            </h5>
+            <h5 class="text-bold">Horario de atendimento:</h5>
+            <h5 class="semana">Segunda a Sábado: 07h00 às 23h00</h5>
+            <h5 class="feriado">Domingos e Feriados: 07h00 às 21h00</h5>
+          </div>
+
+          <button id="ajuda">
+            Institucional <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <button id="ajuda">
+            Central de ajuda <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <button id="ajuda">
+            Atendimento <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+        <div class="pagamento">
+          <img src="../assets/amex.png" alt="bandeira-amex" />
+          <img src="../assets/mastercard.png" alt="bandeira-mastercard" />
+          <img src="../assets/visa.png" alt="bandeira-visa" />
+          <img src="../assets/hipercard.png" alt="bandeira-hipercad" />
+          <img src="../assets/elo.png" alt="bandeira-elo" />
+          <img src="../assets/dinners.png" alt="bandeira-dinners" />
+          <img src="../assets/paypal.png" alt="paypal" />
+          <img src="../assets/pix.png" alt="pix" />
+          <img src="../assets/boleto.png" alt="boleto" />
+        </div>
+
+        <div class="pagamento2">
+          <div class="icone-pagamento">
+            <img src="../assets/amex.png" alt="bandeira-amex" />
+            <img src="../assets/mastercard.png" alt="bandeira-mastercard" />
+            <img src="../assets/visa.png" alt="bandeira-visa" />
+            <img src="../assets/hipercard.png" alt="bandeira-hipercad" />
+            <img src="../assets/elo.png" alt="bandeira-elo" />
+          </div>
+          <div class="icone-pagamento2">
+            <img src="../assets/dinners.png" alt="bandeira-dinners" />
+            <img src="../assets/paypal.png" alt="paypal" />
+            <img src="../assets/pix.png" alt="pix" />
+            <img src="../assets/boleto.png" alt="boleto" />
+          </div>
+        </div>
+      </div>
+      <div class="footer2">
+        <div class="container-texto-footer">
+          <span class="texto-footer"
+            >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+            velit esse molestie consequat, vel illum dolore eu feugiat nulla
+            facilisis at vero eros et accumsan et iusto odio dignissim qui
+            blandit praesent luptatum zzril delenit augue duis dolore te feugait
+            nulla facilisi.</span
+          >
+
+          <span class="texto-footer-mobile"
+            >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</span
+          >
+        </div>
+        <div class="empresas">
+          <img src="../assets/lets.png" alt="logo lets encrypt" />
+          <img src="../assets/vtex2.png" alt="logo vtex pci certified" />
+          <img src="../assets/logofooter.png" alt="logo avanti " />
+          <img src="../assets/vtex.png" alt="logo vtex" />
+        </div>
+      </div>
+    </footer>
+    <script src="../javascript/dropdown.js"></script>
+    <script src="../javascript/input.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../javascript/swipper.js"></script>
+  </body>
+</html>
